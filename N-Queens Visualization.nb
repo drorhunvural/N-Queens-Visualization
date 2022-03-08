@@ -1,0 +1,82 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2375,         74]
+NotebookOptionsPosition[      1873,         57]
+NotebookOutlinePosition[      2295,         73]
+CellTagsIndexPosition[      2252,         70]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"data", "=", 
+   RowBox[{"Import", "[", "\"\<uniquesolutions.csv\>\"", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"firstsolution", " ", "=", " ", 
+   RowBox[{"data", "[", 
+    RowBox[{"[", "1", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"firstsolution", " ", "=", " ", 
+   RowBox[{"firstsolution", "-", "1"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"firstsolutionbinary", " ", "=", " ", 
+   RowBox[{"IntegerDigits", "[", 
+    RowBox[{"firstsolution", ",", "2", ",", "3"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"Line", "[", 
+   RowBox[{"Table", "[", 
+    RowBox[{"firstsolutionbinary", ",", 
+     RowBox[{"{", "1", "}"}]}], "]"}], "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8541118079410577`*^9, 3.8541118614916477`*^9}, {
+  3.855697117342699*^9, 3.8556971248088274`*^9}},
+ EmphasizeSyntaxErrors->
+  True,ExpressionUUID->"3ec99bc2-723e-453b-bf4b-0f4896a91618"],
+
+Cell[BoxData[
+ Graphics3DBox[
+  Line3DBox[{{{0, 0, 0}, {1, 1, 0}, {1, 0, 0}, {1, 1, 1}, {0, 0, 1}, {0, 1, 
+   1}, {1, 0, 1}, {0, 1, 0}}}]]], "Output",
+ CellChangeTimes->{3.8541118634322023`*^9},
+ CellLabel->"Out[62]=",ExpressionUUID->"d5084616-d18d-4309-b906-4553b236a5eb"]
+}, Open  ]]
+},
+WindowSize->{571.8, 522.6},
+WindowMargins->{{Automatic, 246.60000000000002`}, {12, Automatic}},
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (December 2, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"310fa45d-58c9-4543-bd2f-4c9905025bc5"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1001, 25, 105, "Input",ExpressionUUID->"3ec99bc2-723e-453b-bf4b-0f4896a91618"],
+Cell[1584, 49, 273, 5, 407, "Output",ExpressionUUID->"d5084616-d18d-4309-b906-4553b236a5eb"]
+}, Open  ]]
+}
+]
+*)
+
